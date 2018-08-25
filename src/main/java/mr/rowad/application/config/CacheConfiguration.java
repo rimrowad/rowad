@@ -38,6 +38,13 @@ public class CacheConfiguration {
             cm.createCache(mr.rowad.application.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(mr.rowad.application.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(mr.rowad.application.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.Parameter.class.getName(), jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.Team.class.getName(), jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.TeamMember.class.getName(), jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.Investor.class.getName(), jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.ProjectFile.class.getName(), jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.ProjectEvent.class.getName(), jcacheConfiguration);
+            cm.createCache(mr.rowad.application.domain.Project.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
